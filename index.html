@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aishwarya — Portfolio</title>
+  <meta name="description" content="Aishwarya (Aish) — Developer & Student. Modern portfolio inspired by Velora Framer template." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading" id="loading">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <div class="logo-circle">A</div>
+        Aishwarya
+      </div>
+      <nav>
+	    <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="/resume.pdf" target="_blank">Resume</a>
+        <button id="darkToggle" class="dark-toggle">🌙</button>
+      </nav>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="overlay" id="overlay"></div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="/resume.pdf" target="_blank">Resume</a>
+    <button id="darkToggleMobile" class="dark-toggle">🌙</button>
+  </nav>
+
+  <!-- Hero Section with Vanta Background -->
+  <section id="home" class="hero">
+    <!-- Vanta.js Background Container - Only for Hero -->
+    <div id="vanta-bg"></div>
+    <div class="container hero-content fade-in">
+      <h1> <span class="hero-accent">Python Developer</span></h1>
+      <p>Python developer passionate about building efficient solutions and hands-on projects using modern Python tools and libraries.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-code"></i>
+          View Projects
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fas fa-paper-plane"></i>
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2>About</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text fade-in">
+          <p>Aspiring Python developer with a strong foundation in Artificial Intelligence and Machine Learning. Experienced in building hands-on projects and implementing practical solutions using modern Python frameworks and AI/ML techniques.</p>
+          <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">OpenCV</div>
+            <div class="skill">AI/ML</div>
+            <div class="skill">Pandas</div>
+            <div class="skill">NumPy</div>
+			<div class="skill">TensorFlow</div>
+			<div class="skill">Keras</div>
+			<div class="skill">Scikit Learn</div>
+			<div class="skill">Matplotlib</div>
+			<div class="skill">Tkinter</div>
+			<div class="skill">Seaborn</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Embedded C</div>
+          </div>
+        </div>
+        <div class="about-image fade-in">
+          <img src="assets/Aish_new.jpg" alt="Aishwarya">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2>My Projects</h2>
+      </div>
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <img src="assets/DashboardUI.png" alt="Face Recognition System">
+          </div>
+          <div class="project-info">
+            <h3>Face Recognition Attendance</h3>
+            <p>A Face Recognition Attendance System with a modern dashboard UI</p>
+            <div class="project-tags">
+              <div class="project-tag">Python</div>
+              <div class="project-tag">CNN</div>
+              <div class="project-tag">OpenCV</div>
+			  <div class="project-tag">MySQL</div>
+
+            </div>
+            <a href="https://github.com/USAishwarya/Face_Recognition" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <img src="assets/Tinkercad.png" alt="IoT Energy Monitor">
+          </div>
+          <div class="project-info">
+            <h3>Smart Meter Simulation</h3>
+            <p>Smart Meter Simulation using Arduino for real-time power monitoring and display.</p>
+            <div class="project-tags">
+              <div class="project-tag">Arduino Uno</div>
+              <div class="project-tag">Embedded C</div>
+              <div class="project-tag">I2C Interface</div>
+			  <div class="project-tag">Tinkercad</div>
+            </div>
+            <a href="https://github.com/USAishwarya/Smart_Meter_Simulation.git" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2>Get In Touch</h2>
+        <p>Let's work together on something great</p>
+      </div>
+      <div class="contact-content fade-in">        
+        <div class="contact-info">
+          <div class="contact-item">
+            <h4><i class="fas fa-envelope"></i> Email</h4>
+			 <a href="mailto:aishwarya7092004@gmail.com">aishwarya7092004@gmail</a>
+          </div>
+          <div class="contact-item">
+            <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
+            <p>Tamil Nadu, India</p>
+          </div>
+          <div class="contact-item">
+            <h4><i class="fas fa-phone-alt"></i> Phone</h4>
+            <p></p>
+			<a href="tel:+919363005879">9363005879</a>
+          </div>
+        </div>
+        
+        <a href="mailto:aishwarya7092004@gmail.com" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i>
+          Send Message
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        <a href="https://github.com/USAishwarya" class="social-link"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/aishwarya-s-00a8a8259" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/purple_eyz?igsh=MXV2bGp3eDNiYmUyZg==" class="social-link"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>© <span id="year"></span> Aishwarya. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
